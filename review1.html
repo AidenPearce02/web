@@ -2,50 +2,77 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Review - No Game - No Life</title>
-        <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+        <title>Reviews - No Game - No Life</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- My styles -->
+        <link rel="stylesheet" type="text/css" href="styles/main.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="styles/print.css" media="print"/>
     </head>
-    <body id="no-game-no-life">
-        <header>
-            <h1>Review - No Game - No Life</h1>
+    <body id="no-game-no-life" class="bg">
+        <header class="layout anime">
+            <h1>Reviews &ndash; No Game - No Life</h1>
+            <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+                <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto text-md-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Main page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="anime.html">Anime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="films.html">Films</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cartoons.html">Cartoons</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
-        <main>
-            <picture>
-                <source srcset="images/no_game_no_life/no_game_no_life_min_min.jpg" media="(max-width: 400px)" />
-                <source srcset="images/no_game_no_life/no_game_no_life_min.jpg" media="(max-width: 800px)" />
-                <source srcset="images/no_game_no_life/no_game_no_life_mid.jpg" media="(max-width: 1200px)" />
-                <img src="images/no_game_no_life/no_game_no_life_bg.jpg" title="No Game - No Life" alt="No Game - No Life">
-            </picture>
-            <section>
-                <header><h3>Information</h3></header>
-                <ul>
-                    <li>Title: No Game - No Life</li>
-                    <li>Type: anime-show</li>
-                    <li>Year: 2014</li>
-                    <li>Studio: Madhouse</li>
-                    <li>Genres: Game, Adventure, Comedy, Supernatural, Ecchi, Fantasy</li>
-                    <li>Main quota: <span class="italic">"Life is not a game of luck. If you wanna win, work hard"</span> - Sora</li>
-                </ul>
-            </section>
+        <main class="article section">
+            <div class="inline">
+                <picture>
+                    <source srcset="images/no_game_no_life/no_game_no_life_min_min.jpg" media="(max-width: 400px)" />
+                    <source srcset="images/no_game_no_life/no_game_no_life_min.jpg" media="(max-width: 800px)" />
+                    <source srcset="images/no_game_no_life/no_game_no_life_mid.jpg" media="(max-width: 1200px)" />
+                    <img src="images/no_game_no_life/no_game_no_life_bg.jpg" title="No Game - No Life" alt="No Game - No Life">
+                </picture>
+                <section class="information">
+                    <header><h3>Information</h3></header>
+                    <ul>
+                        <li>Title: No Game - No Life</li>
+                        <li>Type: anime-show</li>
+                        <li>Year: 2014</li>
+                        <li>Studio: Madhouse</li>
+                        <li>Genres: Game, Adventure, Comedy, Supernatural, Ecchi, Fantasy</li>
+                        <li>Main quota: <span class="italic">"Life is not a game of luck. If you wanna win, work hard"</span> - Sora</li>
+                    </ul>
+                </section>
+            </div>
             <section>
                 <header><h3>Short description</h3></header>
                 <p>
-                    No Game No Life is a surreal comedy that follows <a href="https://no-game-no-life.fandom.com/wiki/Sora">Sora</a> and
-                    <a href="https://no-game-no-life.fandom.com/wiki/Shiro">Shiro</a>, shut-in NEET siblings and the online gamer duo behind
-                    the legendary username <a href="https://no-game-no-life.fandom.com/wiki/%E3%80%8E_%E3%80%8F">"Blank."</a>
+                    No Game No Life is a surreal comedy that follows <a href="https://no-game-no-life.fandom.com/wiki/Sora" target="_blank">Sora</a> and
+                    <a href="https://no-game-no-life.fandom.com/wiki/Shiro" target="_blank">Shiro</a>, shut-in NEET siblings and the online gamer duo behind
+                    the legendary username <a href="https://no-game-no-life.fandom.com/wiki/%E3%80%8E_%E3%80%8F" target="_blank">"Blank."</a>
                     They view the real world as just another lousy game; however, a strange e-mail challenging
                     them to a chess match changes everything—the brother and sister are plunged into an otherworldly realm where they meet
-                    <a href="https://no-game-no-life.fandom.com/wiki/Tet">Tet</a>, the God of Games.
+                    <a href="https://no-game-no-life.fandom.com/wiki/Tet" target="_blank">Tet</a>, the God of Games.
                 </p>
                 <p>
-                    The mysterious god welcomes Sora and Shiro to <a href="https://no-game-no-life.fandom.com/wiki/Disboard">Disboard</a>, a world where all forms of conflict — from petty squabbles to the fate
+                    The mysterious god welcomes Sora and Shiro to <a href="https://no-game-no-life.fandom.com/wiki/Disboard" target="_blank">Disboard</a>, a world where all forms of conflict — from petty squabbles to the fate
                     of whole countries—are settled not through war, but by way of high-stake games. This system works thanks to a fundamental rule
                     wherein each party must wager something they deem to be of equal value to the other party's wager. In this strange land where
                     the very idea of humanity is reduced to child's play, the indifferent genius gamer duo of Sora and Shiro have finally found a real
                     reason to keep playing games: to unite the sixteen races of Disboard, defeat Tet, and become the gods of this new, gaming-is-everything world.
                 </p>
             </section>
-            <!--<section>
+            <section>
                 <header><h3>My review</h3></header>
                 <p>
                     One of the best anime-show ever I watched. This show has everything perfect:
@@ -56,37 +83,9 @@
                     <li>Sound - 10.0 / 10.0</li>
                     <li>Characters - 10.0 / 10.0</li>
                 </ul>
-                <p>More details down below.</p>
-                <dl>
-                    <dt>-Story</dt>
-                    <dd>
-                        The story of No Game No Life is well built. First off, the premise is well explained.
-                        There is a world where 10 pledges govern sentient beings, and games decide everything.
-                        Why this is is explained early on and the pledges are constantly stated to make sure
-                        the audience understands the setting. The story is entertaining and progresses quite naturally.
-                        Sora and Shiro must take small steps before they take the large ones, and that is reflected in the 12 episodes.
-                    </dd>
-                    <dt>-Art</dt>
-                    <dd>
-                        The art for No Game No Life is amazing. It's unique art style helps create a dreamy atmosphere, reflecting on the
-                        fact that Disboard really is Sora and Shiro's dream world. It always looks fantastic.
-                    </dd>
-                    <dt>-Sound</dt>
-                    <dd>
-                        The voices are very well done, and sound very genuine. The music is very good as well, and goes well with the scenes.
-                    </dd>
-                    <dt>-Characters</dt>
-                    <dd>
-                        The characters are lovable. Sora and Shiro are geniuses, and everyone likes geniuses. But they aren't incredibly intellectual,
-                        which most of us aren't, making them relatable. Sora is smart, but aside from when he's "being smart," he acts like a (for the most part)
-                        like a normal person. Same with Shiro. All the characters provide a comedic aspect unique to that character in the series,
-                        and depending on which characters currently have the spotlight, different jokes are made, spicing up the comedy quite a bit.
-                    </dd>
-                </dl>
-            </section>-->
+            </section>
         </main>
-        <footer>
-            <p>What do you think about this anime? Send me an e-mail on <a href="mailto:vitalii.nikolaienko@student.tuke.sk?Subject=My%20thoughts%20about%20anime%20-%20show%20No%20Game%20-%20No%20Life">mail</a>.<br/> I'll read with pleasure</p>
+        <footer class="layout anime">
             <svg width="310" height="290">
                 <ellipse rx="75" ry="20" cx="150" cy="270" fill="lightgray"/>
                 <circle r="120" cx="150" cy="150" fill="gold"/>
@@ -96,6 +95,11 @@
                 <circle r="10" cx="100" cy="120" />
                 <ellipse rx="10" ry="20" cx="135" cy="210" fill="crimson"/>
             </svg>
+            <p>What do you think about this web-site? Send me an e-mail on <a href="mailto:vitalii.nikolaienko@student.tuke.sk?Subject=My%20thoughts%20about%20web%20-%20site">mail</a>.<br/> I'll read with pleasure</p>
+            <p>2020 &copy; Created by Vitalii Nikolaienko for subject "Web technologies"</p>
         </footer>
+        <script src="scripts/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     </body>
 </html>

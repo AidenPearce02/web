@@ -3,62 +3,456 @@
     padding: 0;
     font-family: "Tw Cen MT", Arial, Helvetica, sans-serif;
 }
+
+html,
 body{
     height: 100%;
-    min-height: 100%;
-}
-header h1{
-    text-align: center;
-    padding: 1em;
-}
-h3{
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 0.5em;
-}
-main table{
     width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.bg{
+    background: url("../images/background.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    flex: 0 0 10em;
+    border: 0.1rem solid black;
+}
+
+nav{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.anime nav{
+    background: #cc0000;
+}
+
+.cartoons nav{
+    background: #0000e6;
+}
+
+.films nav{
+    background: #006700;
+}
+
+.reviews nav{
+    background: #cccc00;
+}
+
+nav li{
+    margin: 0 0.5rem;
+}
+
+nav a{
+    font-size: 1.5rem;
+    color: white !important;
+}
+
+.active{
+    font-weight: bold;
+}
+
+header{
+    margin: 0.5rem;
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0.5rem 0.5rem;
+    color: white;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
     text-align: center;
+    margin: 0.5rem;
+}
+
+footer a{
+    color: white;
+    font-style: italic;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+section{
+    margin: 0.5rem 0;
+}
+
+main{
+    margin: 0.5rem;
+}
+
+.no-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+    border-radius: 1rem;
+    border: 0.1rem solid black;
+    color: white;
+}
+
+.no-content h1{
+    font-size: 6rem;
+    font-style: italic;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.article section{
+    width: 100%;
+}
+
+.article section p{
+    padding: 0.5em;
+    text-indent: 1.5em;
+    text-align: justify;
+    letter-spacing: 0.04rem;
     font-size: 1.5rem;
 }
-table,
-td,
-th {
-    border-width: 0.1em;
-    border-color: black;
-    border-style: solid;
-    border-collapse: collapse;
+
+.article section a{
+    color: white;
+    font-style: italic;
 }
-.name {
-    width: 20%;
+
+.article section a:hover{
+    color: white;
+    font-style: italic;
 }
-.hint{
+
+.article section ul{
+    list-style: none;
+    padding: 0.5em;
+}
+
+.article section li{
+    font-size: 1.5rem;
+}
+
+.article picture{
+    padding: 1rem;
+}
+
+.article .information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inline{
+    display: inline-flex;
+}
+
+.sections{
+    display: flex;
+    height: 20rem;
+}
+
+.section{
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+    color: white;
+}
+
+.reset{
+    margin: auto;
+}
+
+.section h2,p,#opinionForm{
+    margin: 1rem;
+}
+
+textarea{
+    resize: none;
+}
+
+#opinionsContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.opinion{
+    display: flex;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 0.1em solid black;
+    border-radius: 1rem;
+    width: auto;
+}
+
+.profile{
+    width: 30%;
+    min-width: 11.5rem;
+    text-align: center;
+    border-right: 0.1em solid black;
+}
+
+.comment{
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.profile img{
+    margin: 0.5rem;
+    height: 7.5rem;
+}
+
+.profile_name{
+    margin-bottom: 0;
+}
+
+.profile_email{
     font-size: 0.7rem;
     vertical-align: super;
 }
-a{
+
+.comment_comment{
+    margin: 0.5rem;
+    height: 100%;
+}
+
+.comment_date{
+    margin-top: auto;
+    margin-left: auto;
+    font-style: italic;
+}
+
+th,td{
+    padding: 0.75rem;
+    text-align: center;
+}
+
+table{
+    font-size: 1.3rem;
+    color: white;
+}
+
+table a{
     color: black;
     text-decoration: none;
     font-style: italic;
 }
+
+table a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+table,
+td,
+th {
+    border: 0.1em solid black;
+}
+
+.title{
+    font-style: italic;
+}
+
+.hint{
+    display: inline-block;
+    font-size: 0.7rem;
+    vertical-align: bottom;
+}
+.name {
+    padding-top: 2em;
+    width: 20%;
+}
+
+.name img{
+    width: 2em;
+}
+
 .poster img{
+    min-width: 5em;
     display: block;
     margin-right: auto;
     margin-left: auto;
     width: 30%;
 }
-picture{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
+
 .genre{
+    font-style: italic;
     width: 40%;
 }
 .rating{
+    font-style: italic;
     width: 10%;
 }
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.center a{
+    color: white;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.anime{
+    background: red;
+}
+
+.films{
+    background: green;
+}
+
+.cartoons{
+    background: blue;
+}
+
+.reviews{
+    background: yellow;
+}
+
+input:invalid, textarea:invalid{
+    border: 2px solid red;
+}
+
+:required{
+    border: 2px solid black;
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        min-width: 35rem;
+        max-width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sections{
+        flex-direction: row;
+    }
+
+    .item{
+        width: 33.3%;
+        transition: width 2s ease;
+    }
+
+    .animeS{
+        border: 0.2rem solid black;
+        border-bottom-left-radius: 1rem;
+        -moz-border-radius-bottomleft: 1rem;
+        -webkit-border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+        -moz-border-radius-topleft: 1rem;
+        -webkit-border-top-left-radius: 1rem;
+    }
+
+    .cartoonsS{
+        border: 0.2rem solid black;
+        border-bottom-right-radius: 1rem;
+        -moz-border-radius-bottomright: 1rem;
+        -webkit-border-bottom-right-radius: 1rem;
+        border-top-right-radius: 1rem;
+        -moz-border-radius-topright: 1rem;
+        -webkit-border-top-right-radius: 1rem;
+    }
+
+    .filmsS{
+        border-top: 0.2rem solid black;
+        border-bottom: 0.2rem solid black;
+        width: 33.4%;
+    }
+
+    .item:hover{
+        width: 65%;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+    .sections{
+        flex-direction: column;
+    }
+
+    .item{
+        height: 33.3%;
+        transition: height 2s ease;
+    }
+
+    .animeS{
+        border: 0.2rem solid black;
+        border-top-left-radius: 1rem;
+        -moz-border-radius-topleft: 1rem;
+        -webkit-border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        -moz-border-radius-topright: 1rem;
+        -webkit-border-top-right-radius: 1rem;
+    }
+
+    .cartoonsS{
+        border: 0.2rem solid black;
+        border-bottom-right-radius: 1rem;
+        -moz-border-radius-bottomright: 1rem;
+        -webkit-border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        -moz-border-radius-bottomleft: 1rem;
+        -webkit-border-bottom-left-radius: 1rem;
+    }
+
+    .filmsS{
+        border-left: 0.2rem solid black;
+        border-right: 0.2rem solid black;
+        height: 33.4%;
+    }
+
+    .item:hover{
+        height: 65%;
+    }
+}
+
+/*header h1{
+    text-align: center;
+    padding: 1em;
+}
+
+h3{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 0.5em;
+}
+
 section p{
     padding: 0.5em;
     text-indent: 1.5em;
@@ -69,7 +463,7 @@ section p{
 li{
     padding-top: 0.5em;
     font-size: 1.5rem;
-    }
+}
 ul{
     padding: 1rem;
     list-style-position: inside;
@@ -86,15 +480,10 @@ dt{
     text-indent: 1.5em;
     font-weight: bold;
 }
-footer{
-    padding: 1em;
-    text-align: center;
-    font-size: 2em;
-}
-#no-game-no-life{
-    //background: black url("../images/NoGameNoLifeBackground.png") no-repeat fixed center center;
-    //background-size: cover;
-}
+
+
 .italic{
     font-style: italic;
-}
+}*/
+
+

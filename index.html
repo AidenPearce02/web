@@ -1,39 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Reviews</title>
-    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
-</head>
-<body>
-    <header>
-        <h1>Reviews about movies/cartoons/anime</h1>
-    </header>
-    <main>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Poster</th>
-                <th>Genre</th>
-                <th>Rating</th>
-            </tr>
-            <tr>
-                <td class="name"><a href="review1.html">No Game - No Life</a><br/><span class="hint">Press on name above</span></td>
-                <td class="poster"><img src="images/no_game_no_life/no_game_no_life.jpg" title="No Game - No Life" alt="No Game - No Life"></td>
-                <td class="genre">Isekai, Fantasy, Science, Fiction</td>
-                <td class="rating">10/10</td>
-            </tr>
-            <tr>
-                <td class="name"><a href="review2.html">Harry Potter and the Philosopher's Stone</a><br/><span class="hint">Press on name above</span></td>
-                <td class="poster"><img src="images/harry_potter_1/Harry_Potter_and_the_Philosopher's_Stone.jpg" title="Harry Potter and the Philosopher's Stone" alt="Harry Potter and the Philosopher's Stone"></td>
-                <td class="genre">Fantasy, Family</td>
-                <td class="rating">10/10</td>
-            </tr>
+    <head>
+        <!-- Title -->
+        <title>Main page</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- My styles -->
+        <link rel="stylesheet" type="text/css" href="styles/main.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="styles/print.css" media="print">
+    </head>
+    <body class="bg">
+        <header class="layout reviews">
+            <h1>Reviews</h1>
+        </header>
+        <main>
+            <div class="sections">
+                <div class="center anime animeS item">
+                    <a href="anime.html">Anime</a>
+                </div>
+                <div class="center films filmsS item">
+                    <a href="films.html">Films</a>
+                </div>
+                <div class="center cartoons cartoonsS item">
+                    <a href="cartoons.html">Cartoons</a>
+                </div>
+            </div>
+            <section class="section">
+                <h2>Your opinion</h2>
+                <p>Please, use the form below to state your opinion about this page.</p>
+                <form id="opinionForm">
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-2 col-form-label">Your name:</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name here" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label">Your email address:</label>
+                        <div class="col-sm-5">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                               placeholder="Enter your email here" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="pictureProfile" class="col-sm-2 col-form-label">Your profile picture:</label>
+                        <div class="col-sm-5">
+                            <input type="url" class="form-control" id="pictureProfile" placeholder="Enter URL of profile picture">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-form-label col-sm-2 pt-0">What do you prefer to watch?</label>
+                        <div class="col-sm-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="preferToWatch" id="animeC" value="Anime" checked>
+                                <label class="form-check-label" for="animeC">
+                                    Anime
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="preferToWatch" id="filmsC" value="Films">
+                                <label class="form-check-label" for="filmsC">
+                                    Films
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="preferToWatch" id="cartoonsC" value="Cartoons">
+                                <label class="form-check-label" for="cartoonsC">
+                                    Cartoons
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label" for="keyword">Keyword:</label>
+                        <div class="col-sm-5">
+                            <input type="text" list="keywords" class="form-control" aria-describedby="keywordHelp" id="keyword" placeholder="Enter keyword">
+                            <small id="keywordHelp" class="form-text text-muted">
+                                The keyword, that you think appropriate for our page.<br/>
+                                Choose option from main list to change background of opinion
+                            </small>
+                            <datalist id="keywords">
+                                <option value="Anime">
+                                <option value="Films">
+                                <option value="Cartoons">
+                                <option value="Reviews">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Your comment:</label>
+                        <textarea class="form-control" id="comment" rows="3"
+                                  placeholder="Enter your comment here" required></textarea>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-5">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="willReturn">
+                                <label class="form-check-label" for="willReturn">
+                                    I will definitely return to this page.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </section>
+            <section class="section">
+                <div class="inline">
+                    <h2>Visitor Opinions</h2>
+                    <button type="button" class="btn btn-primary btn-sm reset" id="clearOpinions">Reset</button>
+                </div>
+                <div id="opinionsContainer">
 
-        </table>
-    </main>
-    <footer>
-        
-    </footer>
-</body>
+                </div>
+            </section>
+        </main>
+        <footer class="layout reviews">
+            <p class="icons">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+                <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+            <p>What do you think about this web-site? Send me an e-mail<span class="mail"> on <a href="mailto:vitalii.nikolaienko@student.tuke.sk?Subject=My%20thoughts%20about%20web%20-%20site">mail</a></span>.<br/> I'll read with pleasure</p>
+            <p>2020 &copy; Created by Vitalii Nikolaienko for subject "Web technologies"</p>
+        </footer>
+        <script id="templateOpinion" type="text/template">
+            <section class="opinion {{keywordClass}}">
+                <div class="profile">
+                    <img src={{srcImage}} alt="pictureProfile">
+                    <h5 class="profile_name">{{name}} </h5>
+                    <p class="profile_email">{{email}}</p>
+                    <p>What I usually prefer to watch:<br/>{{preferToWatch}}</p>
+                    <p>{{willReturnMessage}}</p>
+                </div>
+                <div class="comment">
+                    <h5>Comment:</h5>
+                    <p class="comment_comment">{{comment}}</p>
+                    <p class="comment_date">{{createdDate}}</p>
+                </div>
+            </section>
+        </script>
+        <script src="scripts/mustache.min.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="scripts/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="scripts/storage.js"></script>
+    </body>
 </html>
