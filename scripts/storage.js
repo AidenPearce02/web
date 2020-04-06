@@ -65,7 +65,6 @@ $(document).ready(function () {
     const opinionForm=document.getElementById("opinionForm");
     const opinionInputs = opinionForm.elements;
     const clearOpinions = document.getElementById("clearOpinions");
-    console.log(clearOpinions);
     clearOpinions.addEventListener("click",clearList);
     opinionForm.addEventListener
     ("submit",processOpnFrmData);
