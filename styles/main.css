@@ -40,15 +40,15 @@ nav{
 }
 
 .anime nav{
-    background: #cc0000;
+    background: #3377ff;
 }
 
 .cartoons nav{
-    background: #0000e6;
+    background: #5533ff;
 }
 
 .films nav{
-    background: #006700;
+    background: #3344ff;
 }
 
 .reviews nav{
@@ -71,6 +71,10 @@ nav a{
 header{
     margin: 0.5rem;
     color: white;
+}
+
+header h1{
+    text-align: center;
 }
 
 footer{
@@ -116,6 +120,7 @@ main{
     border-radius: 1rem;
     border: 0.1rem solid black;
     color: white;
+    text-align: center;
 }
 
 .no-content h1{
@@ -149,7 +154,7 @@ main{
 
 .article section a:hover{
     color: white;
-    font-style: italic;
+    text-decoration: none;
 }
 
 .article section ul{
@@ -172,8 +177,30 @@ main{
     justify-content: center;
 }
 
+.information li{
+    display: flex;
+}
+
 .inline{
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.inline button{
+    margin-right: 1rem;
+}
+
+.quota{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quota_author{
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .sections{
@@ -253,13 +280,13 @@ textarea{
 }
 
 th,td{
-    padding: 0.75rem;
     text-align: center;
 }
 
 table{
     font-size: 1.3rem;
     color: white;
+    width: 100%;
 }
 
 table a{
@@ -286,11 +313,10 @@ th {
 .hint{
     display: inline-block;
     font-size: 0.7rem;
-    vertical-align: bottom;
+    vertical-align: top;
 }
 .name {
-    padding-top: 2em;
-    width: 20%;
+    height: 100%;
 }
 
 .name img{
@@ -298,11 +324,10 @@ th {
 }
 
 .poster img{
-    min-width: 5em;
+    width: 5em;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    width: 30%;
 }
 
 .genre{
@@ -329,19 +354,19 @@ th {
 }
 
 .anime{
-    background: red;
+    background: #3388ff;
 }
 
 .films{
-    background: green;
+    background: #3355ff;
 }
 
 .cartoons{
-    background: blue;
+    background: #4433ff;
 }
 
 .reviews{
-    background: yellow;
+    background: #ffad40;
 }
 
 input:invalid, textarea:invalid{
@@ -350,6 +375,10 @@ input:invalid, textarea:invalid{
 
 :required{
     border: 2px solid black;
+}
+
+.italic{
+    font-style: italic;
 }
 
 @media only screen and (min-width: 768px){
@@ -402,6 +431,35 @@ input:invalid, textarea:invalid{
 }
 
 @media only screen and (max-width: 767px){
+    .inline button{
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+
+    header h3{
+        text-align: center;
+    }
+
+    .information li{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .inline{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .genre{
+        width: auto;
+    }
+
     .sections{
         flex-direction: column;
     }
@@ -441,49 +499,4 @@ input:invalid, textarea:invalid{
         height: 65%;
     }
 }
-
-/*header h1{
-    text-align: center;
-    padding: 1em;
-}
-
-h3{
-    font-size: 1.8rem;
-    text-align: center;
-    padding: 0.5em;
-}
-
-section p{
-    padding: 0.5em;
-    text-indent: 1.5em;
-    text-align: justify;
-    letter-spacing: 0.04rem;
-    font-size: 1.5rem;
-}
-li{
-    padding-top: 0.5em;
-    font-size: 1.5rem;
-}
-ul{
-    padding: 1rem;
-    list-style-position: inside;
-}
-dl{
-    padding-top: 0.5em;
-    font-size: 1.4rem;
-    text-indent: 1.5em;
-    text-align: justify;
-}
-dt{
-    padding-top: 0.5em;
-    font-size: 1.6rem;
-    text-indent: 1.5em;
-    font-weight: bold;
-}
-
-
-.italic{
-    font-style: italic;
-}*/
-
 

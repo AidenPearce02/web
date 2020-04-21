@@ -45,12 +45,15 @@ $(document).ready(function () {
 
     let opinions=[];
 
-    function clearList(event){
+    function clearList(){
+        let saved = [];
         for (let index = 0; index < opinions.length; index++) {
-            if((Date.now() - new Date(opinions[0].created)) > 86400000 ){
-                opinions.splice(index);
+            if((Date.now() - new Date(opinions[index].created)) > 86400000 ){
+                saved = opinions.splice(index);
+                break;
             }
         }
+        opinions = saved;
         localStorage.comments  = JSON.stringify(opinions);
         opinionsContainer.innerHTML=opinionArray2html(opinions);
     }
